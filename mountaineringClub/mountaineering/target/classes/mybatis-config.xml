@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 1.settings包含很多重要的设置项 2.setting用来设置每一个设置项 3.name:设置项名 4.value:设置项值 -->
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="false" />
+		<setting name="jdbcTypeForNull" value="NULL" />
+		<setting name="lazyLoadingEnabled" value="true" />
+		<!-- 当启用时,任何一个延迟属性被调用，一个具有延迟加载属性的对象将完全被加载。 否则，每个属性都按需加载。 -->
+		<setting name="aggressiveLazyLoading" value="false" />
+		<!-- 开启二级缓存 -->
+		<setting name="cacheEnabled" value="true" />
+	</settings>
+</configuration>
